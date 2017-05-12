@@ -1,0 +1,15 @@
+.main-picture::after {
+    font-family: FontAwesome;
+    content: "\f063";
+    text-align: center;
+    display: block;
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+.main-picture img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.main-picture h1 {
+    margin: 50px;
+}
