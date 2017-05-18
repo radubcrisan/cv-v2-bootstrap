@@ -13,3 +13,29 @@
 .main-picture h1 {
     margin: 50px;
 }
+.main-picture .first-h1 {
+    /*display: none;*/
+}
+.main-picture .second-h1 {
+    /*visibility: hidden;*/
+}
+.about-me {
+    padding-top: 50px;
+}
+.about-me .text-info span {
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+    border: solid 1px red;
+}
+.about-me .table-me {
+    display: table;
+    background-color: goldenrod;
+    border: #000 dotted 1px;
+}
+.about-me .row {
+    display: table-row;
+}
+.about-me .cell {
+    display: table-cell;
+}
