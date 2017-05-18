@@ -22,9 +22,14 @@
 .about-me {
     padding-top: 50px;
 }
+.about-me .text-info {
+    font-size: 20px;
+    padding: 40px;
+    line-height: 40px;
+}
 .about-me .text-info span {
     display: inline-block;
-    width: 70px;
+    width: 170px;
     height: 40px;
     border: solid 1px red;
 }
@@ -32,10 +37,15 @@
     display: table;
     background-color: goldenrod;
     border: #000 dotted 1px;
+    width: 100%;
 }
 .about-me .row {
     display: table-row;
 }
 .about-me .cell {
     display: table-cell;
+    padding: 30px;
+}
+.about-me table {
+    margin-top: 30px;
 }
