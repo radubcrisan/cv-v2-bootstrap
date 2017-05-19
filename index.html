@@ -21,9 +21,9 @@
         </div>
         <!-- About Me -->
         <div class="container-fluid bg-info about-me">      
-            <p class="text-info bg-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>Text Inline-Block</span> Sed eu commodo ex. Integer id nisl finibus, semper nisi pellentesque, ultrices diam. Praesent consectetur, neque et maximus tincidunt, lorem eros iaculis lorem, ut imperdiet erat ipsum luctus augue. Sed vel nunc sit amet nibh interdum auctor mattis nec urna. Nam turpis orci, tincidunt sit amet faucibus at, iaculis quis diam. Cras imperdiet commodo purus in sollicitudin. Proin et enim enim. Cras feugiat magna vel lectus vehicula, sed tristique augue iaculis. Suspendisse elit dui, porttitor vitae bibendum at, facilisis sit amet enim. Nam pulvinar quam eu pellentes"que accumsan. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>         
+            <p class="text-info bg-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>Text Inline-Block</span> Sed eu commodo ex. Integer id nisl finibus, semper nisi pellentesque, ultrices diam. Praesent consectetur, neque et maximus tincidunt, lorem eros iaculis lorem, ut imperdiet erat ipsum luctus augue. Sed vel nunc sit amet nibh interdum auctor mattis nec urna. Nam turpis orci, tincidunt sit amet faucibus at, iaculis quis diam. Cras imperdiet commodo purus in sollicitudin. Proin et enim enim. Cras feugiat magna vel lectus vehicula, sed tristique augue iaculis. Suspendisse elit dui, porttitor vitae bibendum at, facilisis sit amet enim. Nam pulvinar quam eu pellentes"que accumsan. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
 
-            <div class="table-me text-center">
+            <div class="table-me">
                 <div class="row">
                     <div class="cell">
                         <a class="btn btn-default btn-lg" href="#">
@@ -40,7 +40,19 @@
                         <a class="btn btn-success btn-lg" href="#">Cool Button</a>
                     </div>
                     <div class="cell">
-                        <a class="btn btn-warning btn-lg" href="#">Cool Button</a>
+                        <div class="dropdown">
+                            <button class="btn btn-warning dropdown-toggle btn-lg" type="button" data-toggle="dropdown" id="dropdownMenu1" aria-haspopup="true" aria-expanded="true">
+                                Dropdown
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div> 
             </div>
@@ -86,9 +98,29 @@
 
         </div>
         <!-- Footer -->
-        <div class="container-fluid bg-success">FOOTER</div>
+        <div class="container-fluid bg-warning footer-me">
+            <hr />
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#address-home" data-toggle="tab"><span class="badge">Address Home</span></a></li>
+                <li><a href="#address-school" data-toggle="tab"><span class="badge">Address School</span></a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade active in" id="address-home">
+                    <u><b>Address Home</b></u>
+                </div>
+                <div class="tab-pane fade" id="address-school">
+                    <br />
+                    <br />
+                    Str. Nufărului nr. 87 <br />
+                    410597 Oradea, ROMÂNIA <br />
+                    Tel./Fax: +40 259.426.692 <br />
+                    Email: contact@emanuel.ro <br />
+                </div>
+            </div>
+        </div>
 
         <!-- Load Bootstrap JS -->      
+        <script src="bootstrap/js/jquery-3.2.1.min.js"></script> 
         <script src="bootstrap/js/bootstrap.min.js"></script> 
     </body>
 </html>

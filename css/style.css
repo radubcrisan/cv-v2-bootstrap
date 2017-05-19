@@ -37,7 +37,8 @@
     display: table;
     background-color: goldenrod;
     border: #000 dotted 1px;
-    width: 100%;
+    float: left;
+    width: 50%;
 }
 .about-me .row {
     display: table-row;
@@ -47,5 +48,10 @@
     padding: 30px;
 }
 .about-me table {
-    margin-top: 30px;
+    float: left;
+    width: 50%;
+}
+.footer-me {
+    padding-top: 30px;
+    padding-bottom: 80px;
 }
