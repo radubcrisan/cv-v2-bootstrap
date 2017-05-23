@@ -55,3 +55,21 @@
     padding-top: 30px;
     padding-bottom: 80px;
 }
+.big-space {
+    height: 500px;
+}
+
+/** SKILLS **/
+.my-skills {
+    padding-top: 40px;
+}
+.my-skills .skill-bootstrap {
+    width: 60%;
+}
+
+.my-skills .skill-html {
+    width: 80%;
+}
+.my-skills .progress {
+    margin-bottom: 0;
+}

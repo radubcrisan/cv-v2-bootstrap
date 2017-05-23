@@ -13,32 +13,32 @@
     <body>
         <!-- Header -->
         <div class="container-fluid bg-warning">
-            <nav class="navbar navbar-default">
+            <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myMenu">
-                            
+                            <i class="fa fa-bars"></i>
                         </button>
                         <a class="navbar-brand" href="#">Me</a>
                     </div>
                     <div class="collapse navbar-collapse" id="myMenu">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#">WHO</a></li>
-                            <li><a href="#">WHAT</a></li>
-                            <li><a href="#">WHERE</a></li>
+                            <li><a href="#who">WHO</a></li>
+                            <li><a href="#what">WHAT</a></li>
+                            <li><a href="#where">WHERE</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
         <!-- Main Picture -->
-        <div class="container-fluid bg-danger text-center main-picture">
+        <div class="container-fluid bg-danger text-center main-picture" id="who">
             <h1 class="first-h1"><mark>This</mark> is <small>me</small></h1>
             <img class="img-circle img-responsive center-block" alt="This is my picture" src="img/bird.jpg">
             <h1 class="second-h1"><mark>Find</mark> about <small>me</small></h1>
         </div>
         <!-- About Me -->
-        <div class="container-fluid bg-info about-me">      
+        <div class="container-fluid bg-info about-me" id="what">      
             <div class="container">
                 <p class="text-info bg-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>Text Inline-Block</span> Sed eu commodo ex. Integer id nisl finibus, semper nisi pellentesque, ultrices diam. Praesent consectetur, neque et maximus tincidunt, lorem eros iaculis lorem, ut imperdiet erat ipsum luctus augue. Sed vel nunc sit amet nibh interdum auctor mattis nec urna. Nam turpis orci, tincidunt sit amet faucibus at, iaculis quis diam. Cras imperdiet commodo purus in sollicitudin. Proin et enim enim. Cras feugiat magna vel lectus vehicula, sed tristique augue iaculis. Suspendisse elit dui, porttitor vitae bibendum at, facilisis sit amet enim. Nam pulvinar quam eu pellentes"que accumsan. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
 
@@ -105,8 +105,22 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Helping</td>
-                            <td>Wasting Time</td>
+                            <td>
+                                <div class="alert alert-info">
+                                    <button class="close" data-dismiss="alert">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                    Helping
+                                </div>
+                            </td>
+                            <td>
+                                <div class="alert alert-warning">
+                                    <button class="close" data-dismiss="alert">
+                                        <i class="fa fa-times-circle"></i>
+                                    </button>
+                                    Wasting Time
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>Running</td>
@@ -116,8 +130,27 @@
                 </table>
             </div>
         </div>
+        <!-- Skills -->
+        <div class="container-fluid my-skills">
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-info">
+                    <div class="progress">                       
+                        <div class="progress-bar progress-bar-danger skill-bootstrap" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                            BOOTSTRAP
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item list-group-item-warning">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped skill-html active">
+                            HTML
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
         <!-- Footer -->
-        <div class="container-fluid bg-warning footer-me">
+        <div class="container-fluid bg-warning footer-me" id="where">
             <hr />
             <ul class="nav nav-tabs">
                 <li class="active"><a href="#address-home" data-toggle="tab"><span class="badge">Address Home</span></a></li>
@@ -137,6 +170,8 @@
                 </div>
             </div>
         </div>
+
+        <div class="big-space"></div>
 
         <!-- Load Bootstrap JS -->      
         <script src="bootstrap/js/jquery-3.2.1.min.js"></script> 
