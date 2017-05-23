@@ -12,7 +12,25 @@
     </head>
     <body>
         <!-- Header -->
-        <div class="container-fluid bg-warning">HEADER</div>
+        <div class="container-fluid bg-warning">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myMenu">
+                            
+                        </button>
+                        <a class="navbar-brand" href="#">Me</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myMenu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">WHO</a></li>
+                            <li><a href="#">WHAT</a></li>
+                            <li><a href="#">WHERE</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
         <!-- Main Picture -->
         <div class="container-fluid bg-danger text-center main-picture">
             <h1 class="first-h1"><mark>This</mark> is <small>me</small></h1>
@@ -21,81 +39,82 @@
         </div>
         <!-- About Me -->
         <div class="container-fluid bg-info about-me">      
-            <p class="text-info bg-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>Text Inline-Block</span> Sed eu commodo ex. Integer id nisl finibus, semper nisi pellentesque, ultrices diam. Praesent consectetur, neque et maximus tincidunt, lorem eros iaculis lorem, ut imperdiet erat ipsum luctus augue. Sed vel nunc sit amet nibh interdum auctor mattis nec urna. Nam turpis orci, tincidunt sit amet faucibus at, iaculis quis diam. Cras imperdiet commodo purus in sollicitudin. Proin et enim enim. Cras feugiat magna vel lectus vehicula, sed tristique augue iaculis. Suspendisse elit dui, porttitor vitae bibendum at, facilisis sit amet enim. Nam pulvinar quam eu pellentes"que accumsan. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <div class="container">
+                <p class="text-info bg-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>Text Inline-Block</span> Sed eu commodo ex. Integer id nisl finibus, semper nisi pellentesque, ultrices diam. Praesent consectetur, neque et maximus tincidunt, lorem eros iaculis lorem, ut imperdiet erat ipsum luctus augue. Sed vel nunc sit amet nibh interdum auctor mattis nec urna. Nam turpis orci, tincidunt sit amet faucibus at, iaculis quis diam. Cras imperdiet commodo purus in sollicitudin. Proin et enim enim. Cras feugiat magna vel lectus vehicula, sed tristique augue iaculis. Suspendisse elit dui, porttitor vitae bibendum at, facilisis sit amet enim. Nam pulvinar quam eu pellentes"que accumsan. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
 
-            <div class="table-me">
-                <div class="row">
-                    <div class="cell">
-                        <a class="btn btn-default btn-lg" href="#">
-                            Cool Button
-                            <span class="badge"><i class="fa fa-star-half-o" aria-hidden="true"></i></span>
-                        </a>
-                    </div>
-                    <div class="cell">
-                        <a class="btn btn-danger btn-lg" href="#">Cool Button</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="cell">
-                        <a class="btn btn-success btn-lg" href="#">Cool Button</a>
-                    </div>
-                    <div class="cell">
-                        <div class="dropdown">
-                            <button class="btn btn-warning dropdown-toggle btn-lg" type="button" data-toggle="dropdown" id="dropdownMenu1" aria-haspopup="true" aria-expanded="true">
-                                Dropdown
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
+                <div class="table-me">
+                    <div class="row">
+                        <div class="cell">
+                            <a class="btn btn-default btn-lg" href="#">
+                                Cool Button
+                                <span class="badge"><i class="fa fa-star-half-o" aria-hidden="true"></i></span>
+                            </a>
+                        </div>
+                        <div class="cell">
+                            <a class="btn btn-danger btn-lg" href="#">Cool Button</a>
                         </div>
                     </div>
-                </div> 
+                    <div class="row">
+                        <div class="cell">
+                            <a class="btn btn-success btn-lg" href="#">Cool Button</a>
+                        </div>
+                        <div class="cell">
+                            <div class="dropdown">
+                                <button class="btn btn-warning dropdown-toggle btn-lg" type="button" data-toggle="dropdown" id="dropdownMenu1" aria-haspopup="true" aria-expanded="true">
+                                    Dropdown
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+
+                <table class="table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th><span class="label label-danger">What I Like</span></th>
+                            <th><span class="label label-danger">What I do not Like</span></th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th><span class="label label-primary">What I Like</span></th>
+                            <th><span class="label label-primary">What I do not Like</span></th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="badge">
+                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                </span>
+                                Reading 
+                            </td>
+                            <td>
+                                <span class="badge">
+                                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                    Facebook
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Helping</td>
+                            <td>Wasting Time</td>
+                        </tr>
+                        <tr>
+                            <td>Running</td>
+                            <td>Shopping</td>
+                        </tr>                              
+                    </tbody>
+                </table>
             </div>
-
-            <table class="table table-striped table-bordered table-hover">
-                <thead>
-                    <tr>
-                        <th><span class="label label-danger">What I Like</span></th>
-                        <th><span class="label label-danger">What I do not Like</span></th>
-                    </tr>
-                </thead>
-                <tfoot>
-                    <tr>
-                        <th><span class="label label-primary">What I Like</span></th>
-                        <th><span class="label label-primary">What I do not Like</span></th>
-                    </tr>
-                </tfoot>
-                <tbody>
-                    <tr>
-                        <td>
-                            <span class="badge">
-                                <i class="fa fa-book" aria-hidden="true"></i>
-                            </span>
-                            Reading 
-                        </td>
-                        <td>
-                            <span class="badge">
-                                <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                                Facebook
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Helping</td>
-                        <td>Wasting Time</td>
-                    </tr>
-                    <tr>
-                        <td>Running</td>
-                        <td>Shopping</td>
-                    </tr>                              
-                </tbody>
-            </table>
-
         </div>
         <!-- Footer -->
         <div class="container-fluid bg-warning footer-me">
