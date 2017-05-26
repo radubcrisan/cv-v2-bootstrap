@@ -1,3 +1,7 @@
+.main-picture {
+    padding-top: 90px;
+}
+
 .main-picture::after {
     font-family: FontAwesome;
     content: "\f063";
@@ -37,19 +41,14 @@
     display: table;
     background-color: goldenrod;
     border: #000 dotted 1px;
-    float: left;
-    width: 50%;
+    width: 100%;
 }
-.about-me .row {
+.about-me .row-me {
     display: table-row;
 }
 .about-me .cell {
     display: table-cell;
     padding: 30px;
-}
-.about-me table {
-    float: left;
-    width: 50%;
 }
 .footer-me {
     padding-top: 30px;
